@@ -1,0 +1,261 @@
+body {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0e1623;
+  background-color: #2d2b2b;
+}
+
+.contact-us {
+  bottom: 0;
+  right: 10px;
+  padding: 5px 8px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  display: block;
+  color: #fff;
+  background-color: #445680;
+  font-size: 14px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.contact-us:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.anchor {
+  position: relative;
+  visibility: hidden;
+  display: block;
+}
+
+.navbar {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.intro {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/background0.jpg");
+}
+
+.intro .jumbotron {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: transparent;
+}
+
+.intro .jumbotron h1 {
+  font-weight: 700;
+}
+
+.intro .jumbotron .lead {
+  font-weight: 200;
+}
+
+.intro .jumbotron .lead a {
+  color: rgba(255, 255, 255, .65);
+}
+
+.intro .jumbotron .lead a:hover {
+  color: rgba(255, 255, 255, .95);
+}
+
+.features {
+  padding: 40px 0;
+  background: #fff;
+  color: #404040;
+}
+
+.features .feature {
+  margin: 10px 0;
+}
+
+.features i {
+  color: #464e5f;
+}
+
+.features p {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pricing {
+  padding: 40px 0;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/background1.jpg");
+  background-color: #25132b;
+}
+
+.pricing .subscription {
+  margin-bottom: 20px;
+}
+
+.pricing .subscription-box {
+  background-color: rgba(0, 0, 0, .22);
+  padding: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.pricing h3 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.pricing h4 {
+  font-size: 24px;
+  margin: 10px 0 20px 0;
+}
+
+.pricing img {
+  width: 169px;
+  height: 169px;
+  opacity: .85;
+}
+
+.pricing .subscription-zero img {
+  background: #60209e;
+  background: -webkit-linear-gradient(left, #1e4a87 0%, #60209e 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1e4a87), color-stop(100%, #60209e));
+  background: -moz-linear-gradient(left, #1e4a87 0%, #60209e 100%);
+  background: -ms-linear-gradient(left, #1e4a87 0%, #60209e 100%);
+  background: -o-linear-gradient(left, #1e4a87 0%, #60209e 100%);
+  background: linear-gradient(to right, #1e4a87 0%, #60209e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e4a87', endColorstr='#60209e', GradientType=1);
+}
+
+.pricing .subscription-support img {
+  background: #60209e;
+  background: -webkit-linear-gradient(left, #cd0000 0%, #840000 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #cd0000), color-stop(100%, #840000));
+  background: -moz-linear-gradient(left, #cd0000 0%, #840000 100%);
+  background: -ms-linear-gradient(left, #cd0000 0%, #840000 100%);
+  background: -o-linear-gradient(left, #cd0000 0%, #840000 100%);
+  background: linear-gradient(to right, #cd0000 0%, #840000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cd0000', endColorstr='#840000', GradientType=1);
+}
+
+.pricing ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing ul li {
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 0;
+  font-size: 16px;
+  max-width: 230px;
+  margin: 0 auto;
+  color: #eaeaea;
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pricing ul li:hover span {
+  font-weight: 500;
+}
+
+.pricing ul li.expanded span {
+  font-weight: 700;
+}
+
+.pricing ul li .info {
+  display: none;
+}
+
+.pricing ul li+li {
+  border-top: 1px solid rgba(255, 255, 255, .27);
+}
+
+.pricing .btn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .24);
+  padding: 10px 8px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+}
+
+.pricing .btn:hover {
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.pricing .btn.apple-pay {
+  display: none;
+  background-color: rgba(0, 0, 0, .24);
+  background-image: -webkit-named-image(apple-pay-logo-white) !important;
+  background-size: 100% 100%;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  height: 52px;
+}
+
+.pricing .alert {
+  display: none;
+}
+
+.footer {
+  background-color: #fff;
+  color: #404040;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #404040;
+}
+
+.footer .about {
+  padding: 0 20px;
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.footer .about h3 {
+  padding: 0 5px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.footer .about div {
+  font-size: 16px;
+  margin: 5px;
+  opacity: .8;
+}
+
+.footer .social {
+  position: relative;
+  min-height: 55px;
+}
+
+.footer .social a {
+  font-size: 30px;
+}
+
+.footer .social .mail {
+  padding-top: 10px;
+}
+
+.footer .copyright {
+  font-size: 14px;
+}
+
+.footer .copyright .p-2 {
+  padding: 5px !important;
+}

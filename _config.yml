@@ -1,0 +1,5 @@
+name: Pritunl Zero
+markdown: kramdown
+highlighting: rouge
+include:
+  - .well-known

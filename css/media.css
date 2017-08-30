@@ -1,0 +1,114 @@
+@media (max-width: 575px) {
+  .anchor {
+    top: -30px;
+  }
+
+  .contact-us {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+
+  .jumbotron {
+    padding: 80px 10px 110px 10px;
+  }
+
+  .jumbotron h1 {
+    font-size: 47px;
+  }
+
+  .jumbotron .lead {
+    font-size: 22px;
+  }
+
+  .jumbotron .lead a {
+    font-size: 18px;
+  }
+
+  .features i {
+    font-size: 40px;
+    width: 43px;
+  }
+}
+
+@media (min-width: 576px) {
+  .anchor {
+    top: -30px;
+  }
+
+  .jumbotron {
+    padding: 150px 10px 180px 10px;
+  }
+
+  .jumbotron h1 {
+    font-size: 72px;
+  }
+
+  .jumbotron .lead {
+    font-size: 28px;
+  }
+
+  .jumbotron .lead a {
+    font-size: 24px;
+  }
+
+  .features i {
+    font-size: 90px;
+    width: 97px;
+  }
+}
+
+@media (min-width: 768px) {
+  .anchor {
+    top: -100px;
+  }
+
+  .jumbotron {
+    padding: 170px 10px 200px 10px;
+  }
+
+  .jumbotron h1 {
+    font-size: 76px;
+  }
+
+  .jumbotron .lead {
+    font-size: 32px;
+  }
+
+  .jumbotron .lead a {
+    font-size: 26px;
+  }
+
+  .features i {
+    font-size: 100px;
+    width: 108px;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron {
+    padding: 200px 10px 230px 10px;
+  }
+
+  .jumbotron h1 {
+    font-size: 84px;
+  }
+
+  .jumbotron .lead {
+    font-size: 38px;
+  }
+
+  .jumbotron .lead a {
+    font-size: 28px;
+  }
+
+  .features i {
+    font-size: 120px;
+    width: 129px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .jumbotron {
+    padding: 230px 10px 260px 10px;
+  }
+}
