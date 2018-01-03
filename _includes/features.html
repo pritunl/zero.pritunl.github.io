@@ -14,7 +14,7 @@ docker pull ubuntu:xenial
 # Start ubuntu container
 docker run --rm -ti --entrypoint /bin/bash ubuntu:xenial
 
-# Add pritunl repository
+# Add pritunl repository (copy all lines together)
 tee -a /etc/apt/sources.list.d/pritunl.list << EOF
 deb http://repo.pritunl.com/stable/apt xenial main
 EOF
