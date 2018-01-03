@@ -2,6 +2,53 @@
     <a id="features" class="anchor"></a>
     <div class="container">
       <div class="row">
+        <div class="example col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <h3>SSH Certificate Example</h3>
+          <textarea class="example-editor"># This demo will be run in a temporary docker container
+# For more information on installing the client visit
+# https://docs.pritunl.com/docs/ssh-client
+
+# Pull ubuntu xenial
+docker pull ubuntu:xenial
+
+# Start ubuntu container
+docker run --rm -ti --entrypoint /bin/bash ubuntu:xenial
+
+# Add pritunl repository
+tee -a /etc/apt/sources.list.d/pritunl.list << EOF
+deb http://repo.pritunl.com/stable/apt xenial main
+EOF
+apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv \
+	7568D9BB55FF9E5287D586017AE645C0CF8E292A
+
+# Install openssh and pritunl-ssh
+apt update
+apt -y install openssh-client ca-certificates pritunl-ssh
+
+# Generate ssh key leave all prompts empty
+ssh-keygen
+# Enter file in which to save the key (/root/.ssh/id_rsa):
+# Enter passphrase (empty for no passphrase):
+# Enter same passphrase again:
+
+# Configure pritunl-ssh using the values below
+pritunl-ssh
+# Enter Pritunl Zero user hostname: zero-demo-ssh.pritunl.com
+# Enter key number or full path to key: 1
+
+# Use cmd or ctrl double click to open the link
+# Login with demo and approve the ssh key
+
+# Verify strict host checking is working
+ssh demo@zero-demo-error.pritunl.com
+# Host key verification failed.
+
+# Verify ssh certificate is working
+ssh demo@zero-demo-host.pritunl.com
+# Successfully authenticated to Pritunl Zero SSH demo</textarea>
+        </div>
+      </div>
+      <div class="row">
         <div class="feature col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
           <div class="d-flex">
             <div class="p-2">
