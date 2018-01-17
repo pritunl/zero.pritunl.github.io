@@ -79,7 +79,7 @@ body {
 
 .example .CodeMirror {
   width: 100%;
-  max-width: 560px;
+  max-width: 570px;
   height: 823px;
   margin: 5px auto;
 }
@@ -102,6 +102,34 @@ body {
   font-family: "Whitney SSm A", "Whitney SSm B";
   font-style: normal;
   font-weight: 300;
+}
+
+.tutorial {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.tutorial p {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-style: normal;
+  font-weight: 300;
+}
+
+.tutorial img {
+  width: 85%;
+}
+
+.tutorial .link {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 28px;
+  color: rgba(0, 0, 0, .65);
+}
+
+.tutorial .link:hover {
+  color: rgba(0, 0, 0, .95);
+  text-decoration: none;
 }
 
 .pricing {
