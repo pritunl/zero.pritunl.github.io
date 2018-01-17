@@ -18,8 +18,7 @@ docker run --rm -ti --entrypoint /bin/bash ubuntu:xenial
 tee -a /etc/apt/sources.list.d/pritunl.list << EOF
 deb http://repo.pritunl.com/stable/apt xenial main
 EOF
-apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv \
-	7568D9BB55FF9E5287D586017AE645C0CF8E292A
+apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 
 # Install openssh and pritunl-ssh
 apt update

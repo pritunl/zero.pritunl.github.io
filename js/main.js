@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
     mode: 'shell',
     theme: 'material',
     lineNumbers: true,
+    lineWrapping: true,
     readOnly: true
   });
 
