@@ -80,7 +80,7 @@ body {
 .example .CodeMirror {
   width: 100%;
   max-width: 570px;
-  height: 823px;
+  height: auto;
   margin: 5px auto;
 }
 
