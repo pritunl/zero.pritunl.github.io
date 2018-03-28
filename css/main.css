@@ -168,6 +168,17 @@ body {
   opacity: .85;
 }
 
+.pricing .subscription-free img {
+  background: #0e831f;
+  background: -webkit-linear-gradient(left, #54bd43 0%, #0e831f 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #54bd43), color-stop(100%, #0e831f));
+  background: -moz-linear-gradient(left, #54bd43 0%, #0e831f 100%);
+  background: -ms-linear-gradient(left, #54bd43 0%, #0e831f 100%);
+  background: -o-linear-gradient(left, #54bd43 0%, #0e831f 100%);
+  background: linear-gradient(to right, #54bd43 0%, #0e831f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54bd43', endColorstr='#0e831f', GradientType=1);
+}
+
 .pricing .subscription-zero img {
   background: #60209e;
   background: -webkit-linear-gradient(left, #1e4a87 0%, #60209e 100%);
