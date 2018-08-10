@@ -32,19 +32,16 @@ ssh-keygen
 
 # Configure pritunl-ssh using the values below
 pritunl-ssh
-# Enter Pritunl Zero user hostname: zero-demo-ssh.pritunl.com
+# Enter Pritunl Zero user hostname: zero-user.pritunl.com
 # Enter key number or full path to key: 1
 
 # Use cmd or ctrl double click to open the link
 # Login with demo and approve the ssh key
 
-# Verify strict host checking is working
-ssh demo@zero-demo-error.pritunl.com
-# Host key verification failed.
-
 # Verify ssh certificate is working
-ssh demo@zero-demo-host.pritunl.com
-# Successfully authenticated to Pritunl Zero SSH demo</textarea>
+ssh git@bastion.gitlab.pritunl.com
+# Pritunl Zero Bastion Host
+# Connection to bastion.gitlab.pritunl.com closed.</textarea>
         </div>
       </div>
       <div class="row">
