@@ -8,25 +8,30 @@
 # For more information on installing the client visit
 # https://docs.pritunl.com/docs/ssh-client
 
-# Pull ubuntu xenial
-docker pull ubuntu:xenial
+# Pull oracle linux 7
+docker pull oraclelinux:7
 
-# Start ubuntu container
-docker run --rm -ti --entrypoint /bin/bash ubuntu:xenial
+# Start oracle linux container
+docker run --rm -ti --entrypoint /bin/bash oraclelinux:7
 
 # Add pritunl repository (copy all lines together)
-tee -a /etc/apt/sources.list.d/pritunl.list << EOF
-deb http://repo.pritunl.com/stable/apt xenial main
+tee /etc/yum.repos.d/pritunl.repo << EOF
+[pritunl]
+name=Pritunl Repository
+baseurl=https://repo.pritunl.com/stable/yum/oraclelinux/7/
+gpgcheck=1
+enabled=1
 EOF
-apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+gpg --armor --export 7568D9BB55FF9E5287D586017AE645C0CF8E292A > key.tmp
+rpm --import key.tmp; rm -f key.tmp
 
 # Install openssh and pritunl-ssh
-apt update
-apt -y install openssh-client ca-certificates pritunl-ssh
+yum -y install pritunl-ssh
 
 # Generate ssh key leave all prompts empty
-ssh-keygen
-# Enter file in which to save the key (/root/.ssh/id_rsa):
+ssh-keygen -t ed25519
+# Enter file in which to save the key (/root/.ssh/id_ed25519):
 # Enter passphrase (empty for no passphrase):
 # Enter same passphrase again:
 
