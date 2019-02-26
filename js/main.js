@@ -179,7 +179,7 @@ jQuery(document).ready(function($) {
   Stripe.setPublishableKey('pk_live_plmoOl3lS3k5dMNQViZWGfVR');
   Stripe.applePay.checkAvailability(function(available) {
     if (available) {
-      $('.apple-pay').css('display', 'block');
+      //$('.apple-pay').css('display', 'block');
     }
   });
 });
