@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
-  CodeMirror.fromTextArea($('.example-editor').get(0), {
-    mode: 'shell',
-    theme: 'material',
-    lineNumbers: true,
-    lineWrapping: true,
-    readOnly: true
-  });
+  // CodeMirror.fromTextArea($('.example-editor').get(0), {
+  //   mode: 'shell',
+  //   theme: 'material',
+  //   lineNumbers: true,
+  //   lineWrapping: true,
+  //   readOnly: true
+  // });
 
   $('.pricing li').click(function(evt) {
     var $tar = $(evt.currentTarget);
