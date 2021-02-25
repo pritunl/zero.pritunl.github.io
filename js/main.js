@@ -97,9 +97,9 @@ jQuery(document).ready(function($) {
       });
     } else {
       checkout.open({
-        amount: 90000,
+        amount: 600000,
         name: 'Pritunl Support',
-        description: 'Subscribe to Support ($900/quarter)',
+        description: 'Subscribe to Support ($6000/year)',
         panelLabel: 'Subscribe'
       });
     }
@@ -124,8 +124,8 @@ jQuery(document).ready(function($) {
         currencyCode: 'USD',
         requiredShippingContactFields: ['email'],
         total: {
-          label: 'Support ($900/quarter)',
-          amount: '900.00'
+          label: 'Support ($6000/year)',
+          amount: '6000.00'
         }
       };
     }
